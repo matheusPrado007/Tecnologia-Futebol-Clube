@@ -14,8 +14,8 @@
 # Dica: Leia a seção Docker e Docker-compose no README para mais informações
 FROM node:16.14-alpine
 WORKDIR /app-frontend
-COPY ./package.json ./
-COPY ./package-lock.json ./
+COPY package ./
 RUN npm install
-ADD ./ ./
+COPY . .
 EXPOSE 3000
+ENTRYPOINT [ "npm", "start" ]
