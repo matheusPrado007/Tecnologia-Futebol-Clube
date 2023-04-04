@@ -14,8 +14,9 @@
 # Dica: Leia a seção Docker e Docker-compose no README para mais informações
 FROM node:16.14-alpine
 WORKDIR /app-frontend
-COPY package ./
+COPY package* ./
 RUN npm install
 COPY . .
 EXPOSE 3000
-ENTRYPOINT [ "npm", "start" ]
+ENTRYPOINT [ "npm", "run"]
+CMD [ "start" ]
