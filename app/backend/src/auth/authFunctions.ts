@@ -1,5 +1,5 @@
 import * as jwt from 'jsonwebtoken';
-import IToken from '../interfaces/IToken';
+import { IData, IToken } from '../interfaces';
 
 const secret = process.env.JWT_SECRET || 'Strogonoff';
 
@@ -10,8 +10,8 @@ const JWT_CONFIG: jwt.SignOptions = {
 
 const createToken = (data: IToken) => jwt.sign({ data }, secret, JWT_CONFIG);
 
-// const verifyToken = (token) => jwt.verify(token, secret);
+const verifyToken = (token: string): IData => jwt.verify(token, secret) as IData;
 
-const token = { createToken };
+const token = { createToken, verifyToken };
 
 export default token;

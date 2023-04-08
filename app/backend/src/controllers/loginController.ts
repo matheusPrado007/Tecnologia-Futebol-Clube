@@ -26,9 +26,14 @@ export default class Login {
         .status(UNAUTHORIZED)
         .json({ message: 'Invalid email or password' });
     }
-    const { password: _, ...userWithoutPassword } = user;
-    const token = Token.createToken(userWithoutPassword);
+    const { id, role, username } = user;
+    const token = Token.createToken({ id, role, username, email });
 
     return res.status(OK_STATUS).json({ token });
   }
+
+  public verify = async (req: Request, res: Response): Promise<Response> => {
+    const { data: { role } } = req.body;
+    return res.status(OK_STATUS).json({ role });
+  };
 }

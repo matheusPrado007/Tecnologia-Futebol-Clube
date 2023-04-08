@@ -31,6 +31,3 @@ export const validateFields = async (
   }
   return next();
 };
-const validate = { validateLogin, validateFields };
-
-export default validate;

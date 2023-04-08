@@ -1,5 +1,5 @@
 import { ModelStatic } from 'sequelize';
-import IUser from '../interfaces/IUser';
+import { IUser } from '../interfaces';
 import Users from '../database/models/Users';
 
 export default class UsersService {
