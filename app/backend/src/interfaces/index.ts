@@ -22,3 +22,9 @@ export interface IUser {
   email: string;
   password: string;
 }
+
+export interface IMatches {
+  id: number | string,
+  homeTeamGoals: number,
+  awayTeamGoals: number,
+}

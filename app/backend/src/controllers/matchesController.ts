@@ -22,4 +22,12 @@ export default class Matches {
     const finish = await this.matchesService.finish(Number(id) as number);
     return res.status(OK_STATUS).json(finish);
   }
+
+  async updated(req: Request, res: Response): Promise<object | void> {
+    const { id } = req.params;
+    const { homeTeamGoals, awayTeamGoals } = req.body;
+    const update = await this.matchesService
+      .updated({ id, homeTeamGoals, awayTeamGoals });
+    return res.status(OK_STATUS).json(update);
+  }
 }

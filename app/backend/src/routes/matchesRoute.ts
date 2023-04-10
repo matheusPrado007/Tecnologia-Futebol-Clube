@@ -19,4 +19,10 @@ routeMatches.patch(
   (req, res) => matchesController.finish(req, res),
 );
 
+routeMatches.patch(
+  '/:id',
+  validations.validateToken,
+  (req, res) => matchesController.updated(req, res),
+);
+
 export default routeMatches;
