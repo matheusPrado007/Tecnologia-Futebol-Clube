@@ -1,5 +1,5 @@
 export interface ITeam {
-  id: number;
+  id?: number;
   teamName: string;
 }
 export interface IToken {
@@ -24,14 +24,18 @@ export interface IUser {
 }
 
 export interface IMatches {
-  id: number | string,
+  id?: number | string,
   homeTeamGoals: number,
   awayTeamGoals: number,
 }
 
 export interface NewMatch {
-  homeTeamId: number,
-  awayTeamId: number,
+  homeTeamId: number | string,
+  awayTeamId: number | string,
   homeTeamGoals: number,
   awayTeamGoals: number,
+}
+export interface IId {
+  homeTeamId: number,
+  awayTeamId: number,
 }

@@ -5,7 +5,9 @@ const OK_STATUS = 200;
 const CREATED = 201;
 
 export default class Matches {
-  constructor(private matchesService: MatchesService) {}
+  constructor(
+    private matchesService: MatchesService,
+  ) {}
 
   async getMatches(req: Request, res: Response): Promise<object | void> {
     const { inProgress } = req.query;

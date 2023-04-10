@@ -28,6 +28,7 @@ routeMatches.patch(
 routeMatches.post(
   '/',
   validations.validateToken,
+  validations.validateTeam,
   (req, res) => matchesController.insert(req, res),
 );
 
