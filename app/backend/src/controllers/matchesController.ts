@@ -16,4 +16,10 @@ export default class Matches {
     const matches = await this.matchesService.getAllMatches();
     return res.status(OK_STATUS).json(matches);
   }
+
+  async finish(req: Request, res: Response): Promise<object | void> {
+    const { id } = req.params;
+    const finish = await this.matchesService.finish(Number(id) as number);
+    return res.status(OK_STATUS).json(finish);
+  }
 }
