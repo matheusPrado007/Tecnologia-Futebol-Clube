@@ -28,3 +28,10 @@ export interface IMatches {
   homeTeamGoals: number,
   awayTeamGoals: number,
 }
+
+export interface NewMatch {
+  homeTeamId: number,
+  awayTeamId: number,
+  homeTeamGoals: number,
+  awayTeamGoals: number,
+}

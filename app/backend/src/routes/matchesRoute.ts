@@ -25,4 +25,10 @@ routeMatches.patch(
   (req, res) => matchesController.updated(req, res),
 );
 
+routeMatches.post(
+  '/',
+  validations.validateToken,
+  (req, res) => matchesController.insert(req, res),
+);
+
 export default routeMatches;

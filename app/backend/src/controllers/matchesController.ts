@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import MatchesService from '../services/matchesService';
 
 const OK_STATUS = 200;
+const CREATED = 201;
 
 export default class Matches {
   constructor(private matchesService: MatchesService) {}
@@ -29,5 +30,12 @@ export default class Matches {
     const update = await this.matchesService
       .updated({ id, homeTeamGoals, awayTeamGoals });
     return res.status(OK_STATUS).json(update);
+  }
+
+  async insert(req: Request, res: Response): Promise<object | void> {
+    const { homeTeamId, awayTeamId, homeTeamGoals, awayTeamGoals } = req.body;
+    const newMatch = await this.matchesService
+      .insert({ homeTeamId, awayTeamId, homeTeamGoals, awayTeamGoals });
+    return res.status(CREATED).json(newMatch);
   }
 }
