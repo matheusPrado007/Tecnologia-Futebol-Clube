@@ -1,3 +1,5 @@
+import Matches from '../database/models/Matches';
+
 export interface ITeam {
   id?: number;
   teamName: string;
@@ -38,4 +40,11 @@ export interface NewMatch {
 export interface IId {
   homeTeamId: number,
   awayTeamId: number,
+}
+
+export interface IMatchesHome extends Matches {
+  homeTeam: {
+    id: number,
+    teamName: string,
+  }
 }

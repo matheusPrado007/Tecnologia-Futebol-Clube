@@ -8,6 +8,7 @@ class App {
     this.app = express();
 
     this.config();
+    this.app.use('/leaderboard', routes.leaderboardRoute);
     this.app.use('/teams', routes.teamRoute);
     this.app.use('/login', routes.loginRoute);
     this.app.use('/matches', routes.matchesRoute);

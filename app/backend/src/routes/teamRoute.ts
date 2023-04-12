@@ -1,9 +1,14 @@
-import { Router } from 'express';
-import { getAllTeams, getTeamById } from '../controllers/teamsController';
+import { Request, Response, Router } from 'express';
+import Team from '../database/models/Teams';
+import TeamService from '../services/teamsService';
+import TeamController from '../controllers/teamsController';
 
 const routeTeam = Router();
+const service = new TeamService(Team);
+const controller = new TeamController(service);
 
-routeTeam.get('/', getAllTeams);
-routeTeam.get('/:id', getTeamById);
+routeTeam.get('/:id', (req: Request, res: Response) => controller.getId(req, res));
+
+routeTeam.get('/', (req: Request, res: Response) => controller.getAll(req, res));
 
 export default routeTeam;
