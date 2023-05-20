@@ -50,7 +50,7 @@ Nesse Projeto desenvolvi uma API (utilizando o método `TDD`) e também integrei
    ---
 ----
    ## Instalando localmente
-  Caso rodar o projeto na sua máquina, siga as orientações:
+  Caso queira rodar o projeto na sua máquina, siga as orientações:
   - Clone o repositório
    git clone git@github.com:matheusPrado007/Trybe-Futebol-Clube.git
 
