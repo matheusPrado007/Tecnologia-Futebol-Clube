@@ -54,7 +54,7 @@ Nesse Projeto desenvolvi uma API (utilizando o método `TDD`) e também integrei
   - Clone o repositório
    git clone git@github.com:matheusPrado007/Trybe-Futebol-Clube.git
 
-    -  Navegue até a pasta do repositório clonado cd Tech-Futebol-Clube
+    -  Navegue até a pasta do repositório clonado cd Tecnologia-Futebol-Clube
 
     - npm install - Instale as dependências no diretório raiz
 
