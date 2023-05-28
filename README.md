@@ -1,65 +1,76 @@
-# Boas vindas ao repositório do Tecnologia Futebol Clube!
+<!DOCTYPE html>
+<html>
 
-## Sobre o projeto
+<head>
+  <meta charset="UTF-8">
+</head>
 
-O `TFC` é um site informativo sobre partidas e classificações de futebol! ⚽️
+<body>
+  <h1>Boas-vindas ao repositório do Tecnologia Futebol Clube!</h1>
 
-Nesse Projeto desenvolvi uma API (utilizando o método `TDD`) e também integrei *- através do docker-compose -* as aplicações para que elas funcionem consumindo um banco de dados.
+  <h2>Sobre o projeto</h2>
+  <p>O Tecnologia Futebol Clube (TFC) é um site informativo sobre partidas e classificações de futebol!</p>
 
------
-### Back-end
+  <p>Neste projeto, desenvolvemos uma API usando o método TDD e integramos as aplicações por meio do docker-compose para que funcionem consumindo um banco de dados.</p>
 
-   **Back-end dockerizado utilizando modelagem de dados através do Sequelize**.  **Construí uma API capaz de ser consumida por um front-end**.
+  <h3>Back-end</h3>
+  <p>O back-end está dockerizado e utiliza o Sequelize para modelagem de dados. Construímos uma API que pode ser consumida por um front-end. Durante o desenvolvimento, apliquei conceitos de Programação Orientada a Objeto (POO) e os princípios SOLID.</p>
 
-   **Na criação apliquei os conceitos de Programação Orientada a Objeto (POO) e os princípios SOLID**.
+  <h3>Tecnologias</h3>
+  <ul>
+    <li>Node.js</li>
+    <li>TypeScript</li>
+    <li>Docker</li>
+    <li>Docker-compose</li>
+    <li>Sequelize</li>
+    <li>Express</li>
+  </ul>
 
-----
-   ## Tecnologias
-   - Node
-   - Typescript
-   - Docker
-   - Docker-compose
-   - Sequelize
-   - Express
-----
-  ### Banco de Dados
-  - MySql
-  ----
-   ### Testes
-   - Mocha
-   - Chai
-   - Sinon
+  <h3>Banco de Dados</h3>
+  <ul>
+    <li>MySQL</li>
+  </ul>
 
-----
-   ## Habilidades
-   - Programação Orientada a Objeto(POO);
-   - Princípios SOLID
-   - Dockerização;
-   -  Modelagem de dados através do Sequelize;
-   - CRUD com Typescript;
-   - JSON Web Token;
-----
-   ## Front-end
-   Fornecido pela instituição
+  <h3>Testes</h3>
+  <ul>
+    <li>Mocha</li>
+    <li>Chai</li>
+    <li>Sinon</li>
+  </ul>
 
-   -------
-   ## Exemplo Front-end
+  <h3>Habilidades</h3>
+  <ul>
+    <li>Programação Orientada a Objeto (POO)</li>
+    <li>Princípios SOLID</li>
+    <li>Dockerização</li>
+    <li>Modelagem de dados com Sequelize</li>
+    <li>CRUD com TypeScript</li>
+    <li>JSON Web Token</li>
+  </ul>
 
-   <img src="./front-example.png">
+  <h2>Front-end</h2>
+  <p>O front-end é fornecido pela instituição.</p>
 
-   ---
-----
-   ## Instalando localmente
-  Caso queira rodar o projeto na sua máquina, siga as orientações:
-  - Clone o repositório
-   git clone git@github.com:matheusPrado007/Trybe-Futebol-Clube.git
+  <h3>Exemplo de Front-end</h3>
+  <img src="./front-example.png" alt="Exemplo de Front-end">
 
-    -  Navegue até a pasta do repositório clonado cd Tecnologia-Futebol-Clube
+  <h2>Instalação local</h2>
+  <p>Para executar o projeto em sua máquina, siga as orientações abaixo:</p>
+  <ol>
+    <li>Clone o repositório:</li>
+    <code>git clone git@github.com:matheusPrado007/Tecnologia-Futebol-Clube.git</code>
+    <li>Navegue até a pasta do repositório clonado:</li>
+    <code>cd Tecnologia-Futebol-Clube</code>
+    <li>Instale as dependências no diretório raiz:</li>
+    <code>npm install</code>
+    <li>Execute o projeto:</li>
+    <code>npm start</code>
+  </ol>
 
-    - npm install - Instale as dependências no diretório raiz
+  <p>Isso permitirá que você execute o projeto localmente e explore suas funcionalidades.</p>
 
+  <hr>
 
+</body>
 
-   
-
-
+</html
